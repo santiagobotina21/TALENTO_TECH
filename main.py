@@ -26,6 +26,7 @@ name="Santiago Esteban"
 last_name="Botina Arciniegas"
 peers=(2,4,6,8,10,11)
 odd=(1,3,5,7,9)
+concatenar=name+" "+last_name
 
 
 print('la variable: ',flag,'es de tipo: ',type(flag))
@@ -38,5 +39,6 @@ print('la variable: ',name,'es de tipo: ',type(name))
 print('la variable: ',last_name,'es de tipo: ',type(last_name))
 print('la variable: ',peers,'es de tipo: ',type(peers))
 print('la variable: ',odd,'es de tipo: ',type(odd))
+print(concatenar)
 
 
