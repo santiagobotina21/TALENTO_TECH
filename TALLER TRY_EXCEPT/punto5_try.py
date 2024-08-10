@@ -22,6 +22,7 @@ while operacion != 5:
         operacion = int(input("Digite el número de la operación que desea realizar: "))
     except:
         print("\n ERROR: Opción no válida. Por favor, ingrese un número del 1 al 5 para seleccionar una operación.")
+        operacion = 0
 
     if operacion == 1:
         try:

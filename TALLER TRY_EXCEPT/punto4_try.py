@@ -20,5 +20,4 @@ for item in lista2:
 
 
 
-print("\nEsta es la lista inicial", lista)
-print("Esta es la lista con enteros", lista2)
+print("Esta es la lista", lista2)

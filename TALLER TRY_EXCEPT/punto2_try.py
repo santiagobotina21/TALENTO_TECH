@@ -6,4 +6,4 @@ lista=[1,2,3,4,5]
 try:
     print(lista[10])
 except IndexError:
-    print("Error: El índice 10 está fuera del rango de la lista. La lista solo tiene {} elementos.".format(len(lista)))
+    print("Error: El índice está fuera del rango de la lista. La lista solo tiene {} elementos.".format(len(lista)))
