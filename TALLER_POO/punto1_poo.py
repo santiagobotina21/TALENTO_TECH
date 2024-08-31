@@ -28,7 +28,7 @@ class UsuarioBanco ():
         print(f"Su saldo actual es de ${self.saldo}")
 
 
-usuario1 = UsuarioBanco("Santiago Botina", 24,1085093252,3188541987)
+usuario1 = UsuarioBanco("Santiago Botina", 24,1017793242,3188541987)
 usuario1.depositar()
 usuario1.retirar()
 usuario1.consultar()
