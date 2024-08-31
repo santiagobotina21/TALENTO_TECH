@@ -1,3 +1,19 @@
+
+# Crear una clase llamada UsuarioBanco con los atributos:
+
+# nombre
+# edad
+# cedula
+# telefono
+# saldo
+
+# al crear una nueva instacia el saldo debe iniciar en cero la clase debe tener los siguientes metodos
+
+# deposito : se debe especificar la cantidad que se a depositar y agregarla a saldo
+# retiro: se debe descontar del saldo, si no tiene fondos suficientes para el retiro se debe informar
+# consultar saldo: que informe el saldo
+
+
 class UsuarioBanco ():
     def __init__(self, nombre,edad,cedula,telefono):
         self.nombre = nombre
