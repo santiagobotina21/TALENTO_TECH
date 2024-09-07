@@ -16,12 +16,17 @@ class Usuario():
         if self.saldoActual <= 0:
             print(f"Actualmente su cuenta está en ceros y por ende no cuenta con los fondos suficientes")
         else:
-            cantidad = float(input("¿Qué valor desea retirar? "))
-            if cantidad > self.saldoActual:
-                print(f"Actualmente no cuenta con los fondos suficientes para el valor que desea retirar")
-            else:
-                self.saldoActual -= cantidad
-                print(f"Se ha debitado: {cantidad}. Saldo actual: {self.saldoActual}")
+            while True:
+                try:
+                    cantidad = float(input("¿Qué valor desea retirar? "))
+                    if cantidad > self.saldoActual:
+                        print(f"Actualmente no cuenta con los fondos suficientes para retirar {cantidad}. Saldo actual: {self.saldoActual}")
+                    else:
+                        self.saldoActual -= cantidad
+                        print(f"Se ha retirado {cantidad}. Saldo actual: {self.saldoActual}")
+                    break  # Salir del bucle si todo fue bien
+                except ValueError:
+                    print("Entrada inválida. Por favor, introduzca un número válido.")
     
     def cumpleaños(self):
         self.edad += 1
@@ -73,7 +78,7 @@ class Empleado(Usuario):
 
 
 
-cliente1 = Cliente("Juan Lopez", 30, "Calle 123 B/La Carolona", "1234567890", 1000.0, "C001", "Ingeniero")
+cliente1 = Cliente("Juan Lopez", 30, "Calle 123 B/La Carolona", "1234567890", 3000.0, "C001", "Ingeniero")
 empleado1 = Empleado("Ana García", 28, "Avenida Santander 742", "0987654321", 2000.0, "E001", "Gerente", 3000.0)
 
 print("---------------------------------")
